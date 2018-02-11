@@ -1,4 +1,4 @@
-# Cacl.go
+# Calc.go
 Given a JSON dictionary containing a `method` and a nested `point` dictionary containing `x` and `y`, outputs the result of running the method on x and y, as an expression.
 
 Extra keys in the dictionary will be ignored.  Missing keys in the `point` will default to zero.  Missing `method` will default to `add`.
