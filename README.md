@@ -12,7 +12,7 @@ Extra keys in the dictionary will be ignored.  Missing keys in the `point` will 
 
 ## Usage
 ```
-add <input file path>
+calc <input file path>
 ```
 The program will also read directly from standard input, e.g.:
 ```
