@@ -83,7 +83,12 @@ func main() {
 
   // If unsuccessful, bail out as gracefully as possible.
   if err != nil {
-    gracefulExit(fmt.Sprintf("Sorry, an error occurred processing the input:\n\n%v\n", err))
+      // If unsuccessful, bail out as gracefully as possible.
+      if err != nil {
+        gracefulExit(fmt.Sprintf(`Sorry, an error occurred processing the input.
+    Please ensure input is a JSON string like { "method": "add", "point": {"x": 123, "y": 444} }
+    For the record, your input was %v`, input))
+      }
     return
   }
 
